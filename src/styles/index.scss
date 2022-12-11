@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+body, html {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #5bb695;
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 62.5%;
+    
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    font-size: 4rem;
+   
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.todos {
+    width: 50rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: .8rem;
+
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 1rem;
+ 
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0 1rem;
+    }
+
+    &__favorite {
+        background-color: rgba(246, 223, 214, 0.8);
+        border-radius: .8rem;
+        margin: .3rem 0;
+
+        & .todo__star {
+            color: #ec6126;
+            & svg {
+               fill: #ec6126;
+               &:hover {
+                fill: #d65721;
+               } 
+            }
+        }
+    }
+
+    &__star {
+        cursor: pointer;
+        display: flex;
+
+       
+
+        svg {
+            height: 35px;
+            fill: #666;
+            
+            &:hover {
+                fill: #555;
+            }
+        }
+    }
+
+    &__delete {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+
+        & img {
+           width: 70%;
+           opacity: 50%;
+           &:hover {
+            opacity: 70%;
+           }
+        }
+    }
+}
+
+.add-todo {
+    display: flex;
+    width: 93%;
+    background-color: #fff;
+    border-radius: .8rem;
+    padding: 2rem 2rem;
+    margin-bottom: 2rem;
+
+    &__input {
+        width: 95%;
+        padding: 1rem;
+        font-size: 1.6rem;
+        margin-right: 3%;
+        border: none;
+        border-bottom: 2px solid #d1d3d4;
+        color: #111111;
+
+        &:focus {
+            outline: none;
+            border-color: #ec6126; 
+        }
+    }
+    
+    &__btn {
+        font-size: 1.9rem;
+        width: 35%;
+        background-color: #ec6126;
+        color: #ffffff;
+        outline: none;
+        border: none;
+        border-radius: .8rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #d65721;
+        }
+    }
+
+    }
+
+
+
+
